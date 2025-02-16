@@ -4,6 +4,28 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-SagaWithRebus-11435b60-04f8-43fb-a04d-4e033e5a1181</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.1" />
+    <PackageReference Include="rebus" Version="5.3.1" />
+    <PackageReference Include="Rebus.RabbitMQ" Version="5.1.2" />
+    <PackageReference Include="Rebus.ServiceProvider" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Modules\Core\Core.csproj" />
+    <ProjectReference Include="..\..\Modules\Pedido\Pedido.csproj" />
+    <ProjectReference Include="..\..\Modules\Pagamento\Pagamento.csproj" />
+  </ItemGroup>
 
 </Project>

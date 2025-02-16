@@ -4,9 +4,9 @@ using Core.Messages.IntegrationEvents;
 using Rebus.Handlers;
 
 namespace Pedido;
-public class PedidoEventHandler : IHandleMessages<PedidoRealizadoEvent>
+public class PedidoEventHandler : IHandleMessages<PedidoIniciadoEvent>
 {
-    public Task Handle(PedidoRealizadoEvent message)
+    public Task Handle(PedidoIniciadoEvent message)
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("PEGUEI EM OUTRO LUGAR");

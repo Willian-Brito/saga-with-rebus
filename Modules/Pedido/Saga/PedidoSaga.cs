@@ -41,7 +41,7 @@ public class PedidoSaga : Saga<PedidoSagaData>,
         Console.WriteLine("Pedido Realizado!");
         Console.ForegroundColor = ConsoleColor.Black;
 
-        _bus.Publish(new PedidoRealizadoEvent { AggregateRoot = message.AggregateRoot }).Wait();
+        _bus.Publish(new PedidoIniciadoEvent { AggregateRoot = message.AggregateRoot }).Wait();
         Data.PedidoRealizado = true;
 
         ProcessoSaga();

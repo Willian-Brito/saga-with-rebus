@@ -3,6 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{822C42BD-63F6-470C-827E-D1D41CDC127E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamento", "Modules\Pagamento\Pagamento.csproj", "{072DEDA6-C0C2-45D4-821B-58B8EFE28664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedido", "Modules\Pedido\Pedido.csproj", "{A6127CB6-A08A-493D-A385-CEBE1BA8245D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Modules\Core\Core.csproj", "{6846D2A5-ACB9-4817-B104-26C5C2F3F82B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{1CB2F229-92A6-4AC9-B183-DE66C7E2C901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SagaWithRebus", "Web\SagaWithRebus\SagaWithRebus.csproj", "{5BAE2BE6-B052-463D-8EEF-5C74444B2CC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +22,29 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{072DEDA6-C0C2-45D4-821B-58B8EFE28664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072DEDA6-C0C2-45D4-821B-58B8EFE28664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072DEDA6-C0C2-45D4-821B-58B8EFE28664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072DEDA6-C0C2-45D4-821B-58B8EFE28664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6127CB6-A08A-493D-A385-CEBE1BA8245D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6127CB6-A08A-493D-A385-CEBE1BA8245D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6127CB6-A08A-493D-A385-CEBE1BA8245D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6127CB6-A08A-493D-A385-CEBE1BA8245D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6846D2A5-ACB9-4817-B104-26C5C2F3F82B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6846D2A5-ACB9-4817-B104-26C5C2F3F82B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6846D2A5-ACB9-4817-B104-26C5C2F3F82B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6846D2A5-ACB9-4817-B104-26C5C2F3F82B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BAE2BE6-B052-463D-8EEF-5C74444B2CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAE2BE6-B052-463D-8EEF-5C74444B2CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAE2BE6-B052-463D-8EEF-5C74444B2CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAE2BE6-B052-463D-8EEF-5C74444B2CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{072DEDA6-C0C2-45D4-821B-58B8EFE28664} = {822C42BD-63F6-470C-827E-D1D41CDC127E}
+		{A6127CB6-A08A-493D-A385-CEBE1BA8245D} = {822C42BD-63F6-470C-827E-D1D41CDC127E}
+		{6846D2A5-ACB9-4817-B104-26C5C2F3F82B} = {822C42BD-63F6-470C-827E-D1D41CDC127E}
+		{5BAE2BE6-B052-463D-8EEF-5C74444B2CC8} = {1CB2F229-92A6-4AC9-B183-DE66C7E2C901}
 	EndGlobalSection
 EndGlobal
